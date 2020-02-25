@@ -1,0 +1,197 @@
+* {
+    scroll-behavior: smooth;
+    font-family: 'Source Code Pro', monospace;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.topdiv {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgba(23, 17, 35, 1), rgba(16, 16, 56, 1));
+    text-align: center;
+    
+}
+
+.topdiv p {
+    color: white;
+    font-size: 2em;
+    
+}
+.topdiv span {
+    color: rgba(244, 96, 54, 1);
+    font-size: 2.2em;
+}
+
+.personaldiv {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom left, rgba(16, 16, 56, 1), rgba(65, 71, 112, 1));
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#personaltext {
+    width: 25%;
+    height: 75vh;
+    order: 2;
+    color: white;
+    font-size: 1.5em;
+    
+}
+
+#imgcontainer {
+    width: 20%;
+    order: 1;
+    height: 50vh;
+    
+}
+
+#imgcontainer img {
+    width: 100%;
+    height: 25em;
+    border-radius: 50%;
+    border: solid 7px rgba(91, 133, 170, 1);
+}
+
+#competenses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 75vh;
+    order: 3;
+    color: white;
+    
+    font-size: 1.2em;
+}
+
+#languages{
+    order: 1;
+}
+
+#frameworks {
+    order: 2;
+}
+
+#tools {
+    order:3;
+}
+
+#links {
+    order: 4;
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(to left, rgba(23, 17, 35, 1), rgba(16, 16, 56, 1));
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#githublogo {
+    
+    width: 10%;
+   
+    
+}
+
+#linkedinlogo {
+    
+    width: 10%;
+    
+    
+    
+}
+#githublogo img {
+   height:100%;
+    
+}
+
+#linkedinlogo img{
+    
+    height: 100%;
+    
+}
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .personaldiv {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #imgcontainer{
+       display: flex;
+       justify-content: center;
+       width: 100%;
+       height: 60vh;
+        
+    }
+
+    #imgcontainer img{
+        width: 70%;
+        height:auto;
+    }
+
+   #personaltext{
+       width: 100%;
+       height: 30vh;
+       font-size: 2.5em;
+       margin-left: 2%;
+       margin-right: 1%;
+   }
+
+   #competenses{
+       flex-wrap: wrap;
+       flex-direction: row;
+       width: 100%;
+       display: flex;
+       justify-content: space-around;     
+   }
+
+    #competenstitle {
+        width: 100%;
+        order: 1;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+   #competenstitle h2{
+       margin: 0;
+       
+   }
+
+    #languages {
+        order: 2;
+        width: 30vw;
+    }
+
+    #frameworks {
+        order: 3;
+        width: 30vw;
+    }
+
+    #tools {
+        order: 4;
+        width: 30vw;
+    }
+
+    #links{
+        height: 5vh;
+        justify-content: center;
+    }
+
+    #links div{
+        margin-left: 2%;
+    }
+
+}
